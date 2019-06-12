@@ -1,1 +1,97 @@
-My Page
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body {
+        padding: 50px 50px 50px 50px !important;
+        background-color: #f8f9fa !important;
+      }
+      #dot {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 100px; 
+      }
+      
+      #dot-text {
+          text-align: center;
+          font-size: 30px;
+      }
+
+      .flex-container {
+          display:flex;
+          align-items: center;
+          justify-content: center; 
+      }
+    
+      .circle {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ac5;
+        border-radius: 100px;
+      }
+      hr {
+        border: #343a40 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <span id="dot" class="flex-container" class="text-dark">
+          <span id="dot-text" class="flex-item">test</span>
+        </span>
+      </div>
+    </div>
+    <div class="pb-4"></div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <hr class="col-md-8">
+      </div>
+    </div>  
+    <div class="pb-4"></div>
+    <div class="container">
+      <div class="row table-row justify-content-md-center">
+        <div class="col-md-4">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <th id="mq135-title"></th>
+                <td class="text-right" id="mq135-val"></td>
+              </tr>
+              <tr>
+                <th id="temperature-title"></th>
+                <td class="text-right" id="temperature-val"></td>
+              </tr>
+              <tr>
+                <th id="humidity-title"></th>
+                <td class="text-right" id="humidity-val"></td>
+              </tr>
+              <tr>
+                <th id="pm25-title"></th>
+                <td class="text-right" id="pm25-val"></td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
+    </div>
+    
+    <footer class="page-footer fixed-bottom bg-dark">
+      <div class="pb-3"></div>
+      <div id="last-updated" class="text-center text-light">© 2018 Copyright:</div>
+      <div class="pb-3"></div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script type="text/javascript" src="./openair1.js"></script>
+    </script>
+
+  </body>
+</html>
